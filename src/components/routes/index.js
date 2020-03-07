@@ -10,7 +10,7 @@ import Products from './public/home';
 import Private from './private';
 import Login from './login';
 
-class Routes extends React.Component() {
+class Routes extends React.Component {
   render() {
     return (
       <Router>
