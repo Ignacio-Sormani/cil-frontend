@@ -1,12 +1,15 @@
 import React from 'react';
 import './home.css';
 import Product from '../../../shared/product';
+import Header from '../../../layout/header';
+import Footer from '../../../layout/footer';
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <div className='product-list'>
+        <Header />
+        <div className="product-list">
           <Product />
           <Product />
           <Product />
@@ -18,6 +21,7 @@ class Home extends React.Component {
           <Product />
           <Product />
         </div>
+        <Footer />
       </>
     );
   }

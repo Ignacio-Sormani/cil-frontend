@@ -1,9 +1,16 @@
 import React from 'react';
-import css from './contact.css';
+import './contact.css';
+import Header from '../../../layout/header';
+import Footer from '../../../layout/footer';
 
 class Private extends React.Component {
   render() {
-    return <>This is the contact page</>;
+    return (
+      <>
+        <Header />
+        <Footer />
+      </>
+    );
   }
 }
 
