@@ -9,7 +9,7 @@ class Home extends React.Component {
     return (
       <>
         <Header />
-        <div className='product-list'>
+        <div className="product-list">
           <Product />
           <Product />
           <Product />
