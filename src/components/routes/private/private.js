@@ -7,7 +7,7 @@ class Private extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header historyProp={this.props.history} />
         <Footer />
       </>
     );
