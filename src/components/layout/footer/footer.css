@@ -4,11 +4,11 @@
   justify-content: space-around;
   align-items: flex-end;
   padding: 20px;
-  background: linear-gradient(rgb(201, 17, 207), blue);
-  color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
-  font-weight: bolder;
+  font-weight: bold;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 

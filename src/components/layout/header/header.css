@@ -6,20 +6,15 @@
   height: 100px;
   padding-top: 10px;
   padding-bottom: 20px;
-  background: linear-gradient(to bottom, blue, violet 70%);
+  background-color: black;
   color: #ffffff;
 }
 
 .link {
-  font-weight: bolder;
-  font-size: 16px;
-  text-decoration: none;
-  color: #110101;
-  text-shadow: 1px 1px 1px rgba(30, 7, 158, 0.808);
-}
-
-.link:hover {
-  color: blue;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
 }
 
 .logo {
@@ -28,36 +23,35 @@
   z-index: 1;
 }
 
-.absolute-link {
-  position: absolute;
+.login-button {
+  z-index: 1;
+  position: absolute !important;
   top: 10px;
   right: 10px;
+  width: 80px;
+  height: 40px !important;
+  background-color: orange !important;
+  font-weight: bold !important;
+  color: white !important;
+  box-shadow: none !important;
 }
 
-.login-button {
-  box-shadow: 0px 0px 50px 0px #737373;
-  background: linear-gradient(to bottom, orange 70%, orange);
-  display: inline-block;
-  cursor: pointer;
-  color: black;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 5px 15px;
-  text-decoration: none;
-  border-radius: 18px 18px 45px 18px;
-  -moz-border-radius: 18px 18px 45px 18px;
-  -webkit-border-radius: 18px 18px 33px 18px;
-}
-
-.login-button:hover {
-  background-color: #e6e20a;
-  color: blue;
+.username-welcome {
+  z-index: 1;
+  position: absolute !important;
+  top: 10px;
+  left: 10px;
+  font-weight: bold !important;
+  color: white !important;
 }
 
 @media (min-width: 480px) {
   .link {
-    font-size: 20px;
+    font-size: 20px !important;
+  }
+
+  .login-button {
+    width: 100px;
   }
 }
 
@@ -65,14 +59,23 @@
   header {
     height: 140px;
   }
+
   .link {
-    font-weight: bolder;
-    font-size: 22px;
+    font-weight: bold !important;
+    font-size: 22px !important;
+  }
+
+  .login-button {
+    width: 120px;
   }
 }
 
 @media (min-width: 1600px) {
   .link {
-    font-size: 24px;
+    font-size: 24px !important;
+  }
+
+  .login-button {
+    width: 150px;
   }
 }
