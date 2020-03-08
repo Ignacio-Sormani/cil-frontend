@@ -1,0 +1,75 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: slategray;
+}
+
+#contact-div {
+  margin: 11px;
+  padding: 11px;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+#form {
+  width: 100%;
+  height: 100%;
+  margin: 2px;
+}
+
+#subject {
+  margin: 7px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#e-mail {
+  margin: 7px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#msg {
+  width: 98%;
+  height: 110px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#contact {
+  margin: 0px 0px 20px 0px;
+  padding: 7px;
+  width: auto;
+  color: black;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#button-submit {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(247, 230, 2);
+  font-weight: bold;
+  align-self: flex-end;
+}
