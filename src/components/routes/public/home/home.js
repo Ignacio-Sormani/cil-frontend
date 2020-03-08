@@ -1,14 +1,14 @@
 import React from 'react';
 import './home.css';
-import Product from '../../../shared/product';
 import Header from '../../../layout/header';
 import Footer from '../../../layout/footer';
+import Product from '../../../shared/product';
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header historyProp={this.props.history} />
         <div className="product-list">
           <Product />
           <Product />

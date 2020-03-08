@@ -3,15 +3,15 @@ import './contact.css';
 import Header from '../../../layout/header';
 import Footer from '../../../layout/footer';
 
-class Private extends React.Component {
+class Contact extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header historyProp={this.props.history} />
         <Footer />
       </>
     );
   }
 }
 
-export default Private;
+export default Contact;
