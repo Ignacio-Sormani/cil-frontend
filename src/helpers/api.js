@@ -15,12 +15,10 @@ const fetchi = (url, params) => {
   return f.then(requestHandler).catch(errorHandler);
 };
 
-// Check if the token works this ways and then use it everywhere
-// export const get = (url, token = '') => {
-export const get = url => {
+export const get = (url, token = '') => {
   const params = {
-    method: 'GET'
-    // headers: token ? { Authorization: token } : undefined
+    method: 'GET',
+    headers: token ? { Authorization: token } : undefined
   };
   return fetchi(url, params);
 };

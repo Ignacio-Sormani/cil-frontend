@@ -7,11 +7,12 @@ export const GET_ACTIVE_PRODUCTS_FETCHING = 'GET_ACTIVE_PRODUCTS_FETCHING';
 export const GET_ACTIVE_PRODUCTS_FULFILLED = 'GET_ACTIVE_PRODUCTS_FULFILLED';
 export const GET_ACTIVE_PRODUCTS_REJECTED = 'GET_ACTIVE_PRODUCTS_REJECTED';
 
-export const getProductsThunk = () => dispatch => {
+export const getProductsThunk = () => (dispatch, getState) => {
   dispatch({
     type: GET_PRODUCTS_FETCHING
   });
-  return get('/products')
+  const token = getState().auth.token || '';
+  return get('/products', token)
     .then(response => {
       if (!response.error) {
         return dispatch({
