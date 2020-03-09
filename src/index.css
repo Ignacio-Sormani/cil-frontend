@@ -129,3 +129,6 @@ table {
   justify-content: space-between;
   align-items: stretch;
 }
+body {
+  background-color: slategrey;
+}

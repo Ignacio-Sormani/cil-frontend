@@ -5,6 +5,11 @@ import Footer from '../../layout/footer';
 import Table from '../../shared/table';
 
 class Private extends React.Component {
+  componentDidMount() {
+    if (!this.props.productList.length) {
+      this.props.getProducts();
+    }
+  }
   render() {
     return (
       <>

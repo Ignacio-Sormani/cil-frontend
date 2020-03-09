@@ -17,34 +17,18 @@ class ResponsiveTable extends React.Component {
             </Tr>
           </Thead>
           <Tbody>
-            <Tr>
-              <Td>asdads3456asda</Td>
-              <Td>guitarra</Td>
-              <Td>cuerdas</Td>
-              <Td>$646</Td>
-              <Td>5</Td>
-            </Tr>
-            <Tr>
-              <Td>asdads3456asda</Td>
-              <Td>guitarra</Td>
-              <Td>cuerdas</Td>
-              <Td>$646</Td>
-              <Td>5</Td>
-            </Tr>
-            <Tr>
-              <Td>asdads3456asda</Td>
-              <Td>guitarra</Td>
-              <Td>cuerdas</Td>
-              <Td>$646</Td>
-              <Td>5</Td>
-            </Tr>
-            <Tr>
-              <Td>asdads3456asda</Td>
-              <Td>guitarra</Td>
-              <Td>cuerdas</Td>
-              <Td>$646</Td>
-              <Td>5</Td>
-            </Tr>
+            {this.props.productList.length &&
+              this.props.productList.map(product => {
+                return (
+                  <Tr key={product._id}>
+                    <Td>{product._id}</Td>
+                    <Td>{product.name}</Td>
+                    <Td> {product.category.name}</Td>
+                    <Td> ${product.price}</Td>
+                    <Td> {product.stock}</Td>
+                  </Tr>
+                );
+              })}
           </Tbody>
         </Table>
       </>
