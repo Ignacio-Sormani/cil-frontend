@@ -17,7 +17,7 @@ class Home extends React.Component {
         <div className="product-list">
           {this.props.productList.length &&
             this.props.productList.map(product => (
-              <Product productProp={product} />
+              <Product key={product._id} productProp={product} />
             ))}
         </div>
         <Footer />
