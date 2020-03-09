@@ -5,21 +5,20 @@ import Footer from '../../../layout/footer';
 import Product from '../../../shared/product';
 
 class Home extends React.Component {
+  componentDidMount() {
+    if (!this.props.productList.length) {
+      this.props.getActiveProducts();
+    }
+  }
   render() {
     return (
       <>
         <Header historyProp={this.props.history} />
         <div className="product-list">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          {this.props.productList.length &&
+            this.props.productList.map(product => (
+              <Product productProp={product} />
+            ))}
         </div>
         <Footer />
       </>

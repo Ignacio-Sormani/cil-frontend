@@ -4,15 +4,18 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import auth from './auth/authReducer';
+import product from './product/reducers';
 
 const rootReducer = combineReducers({
-  auth
+  auth,
+  product
 });
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['auth']
+  whitelist: ['auth'],
+  blacklist: ['product']
 };
 
 const store = createStore(

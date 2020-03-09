@@ -6,13 +6,21 @@ class Product extends React.Component {
     return (
       <div className="product-box">
         <div className="product-container">
-          <div className="product-img"></div>
+          <div className="product-img">
+            <img
+              src={`http://localhost:4000${this.props.productProp.image}`}
+              alt={this.props.productProp.name}
+              className="image"
+            />
+          </div>
           <div className="product-description">
-            <p className="name">Guitarra Electrica (Viento)</p>
-            <p className="description">Descripcion: asd</p>
+            <p className="name">{`${this.props.productProp.name} (${this.props.productProp.category.name})`}</p>
+            <p className="description">
+              Descripcion: {this.props.productProp.description}
+            </p>
             <div className="availability">
-              <p className="price">Precio: $15000</p>
-              <p className="stock">Sin stock</p>
+              <p className="price">${this.props.productProp.price}</p>
+              <p className="stock">Stock: {this.props.productProp.stock}</p>
             </div>
           </div>
         </div>
