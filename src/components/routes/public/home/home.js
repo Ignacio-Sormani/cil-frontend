@@ -15,16 +15,10 @@ class Home extends React.Component {
       <>
         <Header historyProp={this.props.history} />
         <div className="product-list">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          {this.props.productList.length &&
+            this.props.productList.map(product => (
+              <Product productProp={product} />
+            ))}
         </div>
         <Footer />
       </>
