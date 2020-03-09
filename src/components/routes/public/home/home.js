@@ -5,6 +5,11 @@ import Footer from '../../../layout/footer';
 import Product from '../../../shared/product';
 
 class Home extends React.Component {
+  componentDidMount() {
+    if (!this.props.productList.length) {
+      this.props.getActiveProducts();
+    }
+  }
   render() {
     return (
       <>

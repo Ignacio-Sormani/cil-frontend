@@ -4,7 +4,7 @@ export const GET_ACTIVE_PRODUCTS_FETCHING = 'GET_ACTIVE_PRODUCTS_FETCHING';
 export const GET_ACTIVE_PRODUCTS_FULFILLED = 'GET_ACTIVE_PRODUCTS_FULFILLED';
 export const GET_ACTIVE_PRODUCTS_REJECTED = 'GET_ACTIVE_PRODUCTS_REJECTED';
 
-export const getActiveProducts = () => dispatch => {
+export const getActiveProductsThunk = () => dispatch => {
   dispatch({
     type: GET_ACTIVE_PRODUCTS_FETCHING
   });

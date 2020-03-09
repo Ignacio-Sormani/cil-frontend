@@ -22,7 +22,7 @@ export const get = url => {
     method: 'GET'
     // headers: token ? { Authorization: token } : undefined
   };
-  fetchi(url, params);
+  return fetchi(url, params);
 };
 
 // export const post = (url, data, token = '') => {
