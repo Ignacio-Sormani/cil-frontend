@@ -1,5 +1,5 @@
 import Component from './login';
-import { loginThunk } from '../../../redux/auth/authActions';
+import { loginThunk } from '../../../redux/auth/actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => ({
@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  loginThunk: user => dispatch(loginThunk(user))
+  login: user => dispatch(loginThunk(user))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Component);

@@ -17,6 +17,10 @@
   color: #ffffff !important;
 }
 
+.link:hover {
+  cursor: pointer;
+}
+
 .logo {
   align-self: flex-start;
   height: 140px;

@@ -5,7 +5,7 @@ export const LOGIN_FULFILLED = 'LOGIN_FULFILLED';
 export const LOGIN_REJECTED = 'LOGIN_REJECTED';
 export const LOGOUT = 'LOGOUT';
 
-export const loginThunk = data => dispatch => {
+export const loginThunk = data => (dispatch, getState) => {
   dispatch({
     type: LOGIN_FETCHING
   });

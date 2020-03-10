@@ -11,27 +11,9 @@
   .product-list {
     align-self: center;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 350px;
-  }
-}
-
-@media (min-width: 768px) {
-  .product-list {
-    width: 700px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .product-list {
-    width: 1050px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .product-list {
-    width: 1400px;
+    width: 90%;
   }
 }

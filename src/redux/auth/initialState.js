@@ -3,5 +3,6 @@ export default {
   email: undefined,
   authenticated: false,
   error: null,
-  isFetching: false
+  isFetching: false,
+  token: undefined
 };

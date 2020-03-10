@@ -1,5 +1,5 @@
 import Component from './header';
-import { logout } from '../../../redux/auth/authActions';
+import { logout } from '../../../redux/auth/actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => ({
