@@ -13,15 +13,24 @@ class Header extends React.Component {
             className="link"
             onClick={() => this.props.historyProp.push('/')}
           >
-            PRODUCTOS
+            INICIO
           </Link>
           <img className="logo" src={logo} alt="logo" />
-          <Link
-            className="link"
-            onClick={() => this.props.historyProp.push('/contact')}
-          >
-            CONTACTO
-          </Link>
+          {this.props.authenticated ? (
+            <Link
+              className="link"
+              onClick={() => this.props.historyProp.push('/private')}
+            >
+              PRODUCTOS
+            </Link>
+          ) : (
+            <Link
+              className="link"
+              onClick={() => this.props.historyProp.push('/contact')}
+            >
+              CONTACTO
+            </Link>
+          )}
         </div>
         <Button
           variant="contained"

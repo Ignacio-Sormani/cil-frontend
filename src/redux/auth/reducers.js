@@ -1,10 +1,10 @@
-import initialState from './authInitialState';
+import initialState from './initialState';
 import {
   LOGIN_FETCHING,
   LOGIN_FULFILLED,
   LOGIN_REJECTED,
   LOGOUT
-} from './authActions';
+} from './actions';
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {

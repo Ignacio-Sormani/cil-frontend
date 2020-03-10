@@ -23,38 +23,34 @@ export const get = (url, token = '') => {
   return fetchi(url, params);
 };
 
-// export const post = (url, data, token = '') => {
-export const post = (url, data) => {
-  let params = {
+export const post = (url, data, token = '') => {
+  const params = {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: token
+      ? { 'Content-Type': 'application/json', Authorization: token }
+      : { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   };
-  // if (token) {
-  //   params = {
-  //     ...params,
-  //     header: {
-  //       ...params.header,
-  //       Authorizacion: token
-  //     }
-  //   };
-  // }
   return fetchi(url, params);
 };
 
-export const patch = (url, data) => {
+export const patch = (url, data, token = '') => {
   const params = {
     method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
+    headers: token
+      ? { 'Content-Type': 'application/json', Authorization: token }
+      : { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   };
   return fetchi(url, params);
 };
 
-export const remove = (url, data) => {
+export const remove = (url, token = '') => {
   const params = {
     method: 'DELETE',
-    headers: { 'Content-Type': 'application/json' }
+    headers: token
+      ? { 'Content-Type': 'application/json', Authorization: token }
+      : { 'Content-Type': 'application/json' }
   };
   return fetchi(url, params);
 };

@@ -20,7 +20,11 @@ class Product extends React.Component {
             </p>
             <div className="availability">
               <p className="price">${this.props.productProp.price}</p>
-              <p className="stock">Stock: {this.props.productProp.stock}</p>
+              <p className="stock">
+                {this.props.productProp.stock
+                  ? `Stock: ${this.props.productProp.stock}`
+                  : 'Sin stock'}
+              </p>
             </div>
           </div>
         </div>

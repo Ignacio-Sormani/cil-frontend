@@ -10,9 +10,9 @@ class ResponsiveTable extends React.Component {
           <Thead>
             <Tr>
               <Th>Codigo</Th>
-              <Th>Name</Th>
-              <Th>Category</Th>
-              <Th>Price</Th>
+              <Th>Nombre</Th>
+              <Th>Categoria</Th>
+              <Th>Precio</Th>
               <Th>Stock</Th>
             </Tr>
           </Thead>
