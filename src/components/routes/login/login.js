@@ -31,7 +31,7 @@ class Login extends React.Component {
               }
             }}
             onSubmit={(values, { setSubmitting }) => {
-              this.props.loginThunk(values).then(res => {
+              this.props.login(values).then(res => {
                 if (res.type === 'LOGIN_FULFILLED') {
                   this.props.history.push('/private');
                 } else {
