@@ -16,22 +16,15 @@ export const emailValidation = email => {
   }
 }; // TO DO: check why the regex breaks the code. It works anyway
 
-export const numberValidation = (value) => {
+export const numberValidation = value => {
   if (!value) {
     return 'Este campo es requerido';
-  }else if (!Number.isInteger(value))
-    return 'Este campo debe ser un numero entero!'
+  } else if (!Number.isInteger(value))
+    return 'Este campo debe ser un numero entero!';
 };
 
-export const requiredValidation = (content) =>{
+export const requiredValidation = content => {
   if (!content.length) {
-    return 'Este campo es requerido'
+    return 'Este campo es requerido';
   }
 };
-
-/*
-export const imageValidation = image => {
-  if (!image) {
-    return 'imagen Requerida';
-  }
-};*/
