@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:4000';
+const baseURL = 'http://mcga-cil.herokuapp.com/api';
 
 const requestHandler = res => {
   return res.json();
