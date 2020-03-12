@@ -19,12 +19,18 @@ export const emailValidation = email => {
 export const numberValidation = value => {
   if (!value) {
     return 'Este campo es requerido';
-  } else if (!Number.isInteger(value))
+  } else if (!value.match(/^[0-9]+$/) || value == 0)
     return 'Este campo debe ser un numero entero!';
 };
 
-export const requiredValidation = content => {
-  if (!content.length) {
+export const requiredValidation = value => {
+  if (!value.length) {
     return 'Este campo es requerido';
+  }
+};
+
+export const categoryValidation = category => {
+  if (!category) {
+    return 'Debe seleccionar una categoria';
   }
 };

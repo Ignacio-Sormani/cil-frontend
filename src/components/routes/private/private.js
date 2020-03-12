@@ -3,14 +3,13 @@ import './private.css';
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 import Table from '../../shared/table';
-import { Formik } from 'formik';
+import PostProductForm from '../../shared/post-product';
 
 class Private extends React.Component {
   componentDidMount() {
-    if (!this.props.productList.length) {
-      this.props.getProducts();
-    }
+    this.props.getProducts();
   }
+
   render() {
     return (
       <>
@@ -19,7 +18,7 @@ class Private extends React.Component {
           <Table />
         </div>
         <div className="post-product-container">
-          <Formik />
+          <PostProductForm />
         </div>
         <Footer />
       </>

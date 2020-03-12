@@ -16,7 +16,7 @@ class Login extends React.Component {
     return (
       <>
         <Header historyProp={this.props.history} />
-        <div className="newProduct-container">
+        <div className="login-container">
           <h1>Login</h1>
           <Formik
             initialValues={{ email: '', password: '' }}

@@ -8,9 +8,9 @@ class Contact extends React.Component {
     return (
       <>
         <Header historyProp={this.props.history} />
-        <div class="flex-col">
-          <div id="contact-div" class="flex-col">
-            <form id="form" class="flex-col">
+        <div className="flex-col">
+          <div id="contact-div" className="flex-col">
+            <form id="form" className="flex-col">
               <input
                 id="subject"
                 type="text"
@@ -36,7 +36,7 @@ class Contact extends React.Component {
               </button>
             </form>
           </div>
-          <div class="flex-row">
+          <div className="flex-row">
             <p id="contact">
               CONTACTO:
               <br />

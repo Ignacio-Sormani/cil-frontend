@@ -2,6 +2,15 @@
   margin-top: 50px;
   font-family: Arial;
 }
+
+.post-product-container {
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 @media (min-width: 480px) {
   .table-container {
     align-self: center;
