@@ -14,6 +14,7 @@ h1 {
   margin: 50px;
   align-self: center;
   border-radius: 50px;
+  background-color: white;
 }
 
 .login-form {
@@ -28,6 +29,7 @@ h1 {
 .errMsg,
 .login-submit-button {
   align-self: center;
+  background-color: white;
 }
 
 .errMsg {

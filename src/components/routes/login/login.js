@@ -17,7 +17,7 @@ class Login extends React.Component {
       <>
         <Header historyProp={this.props.history} />
         <div className="login-container">
-          <h1>LOGIN</h1>
+          <h1>Login</h1>
           <Formik
             initialValues={{ email: '', password: '' }}
             validate={values => {

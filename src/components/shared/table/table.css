@@ -8,11 +8,17 @@ table {
 tr:nth-of-type(odd) {
   background: #eee;
 }
+
+tr:nth-of-type(even) {
+  background: #c66;
+}
+
 th {
   background: #333;
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
+
 td,
 th {
   padding: 6px;
@@ -83,6 +89,7 @@ th {
     text-align: left !important;
     font-weight: 600;
   }
+
   td.pivoted:hover {
     background-color: burlywood;
   }

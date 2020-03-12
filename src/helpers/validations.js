@@ -15,3 +15,22 @@ export const emailValidation = email => {
     return 'Formato de email invalido!';
   }
 }; // TO DO: check why the regex breaks the code. It works anyway
+
+export const numberValidation = value => {
+  if (!value) {
+    return 'Este campo es requerido';
+  } else if (!value.match(/^[0-9]+$/) || value == 0)
+    return 'Este campo debe ser un numero entero!';
+};
+
+export const requiredValidation = value => {
+  if (!value.length) {
+    return 'Este campo es requerido';
+  }
+};
+
+export const categoryValidation = category => {
+  if (!category) {
+    return 'Debe seleccionar una categoria';
+  }
+};

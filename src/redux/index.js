@@ -5,17 +5,19 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import auth from './auth/reducers';
 import product from './product/reducers';
+import category from './category/reducers';
 
 const rootReducer = combineReducers({
   auth,
-  product
+  product,
+  category
 });
 
 const persistConfig = {
   key: 'root',
   storage,
   whitelist: ['auth'],
-  blacklist: ['product']
+  blacklist: ['product', 'category']
 };
 
 const store = createStore(

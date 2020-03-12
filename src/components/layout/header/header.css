@@ -6,8 +6,9 @@
   height: 100px;
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: black;
+  background: linear-gradient(95deg, rgb(248, 124, 122), rgba(190, 48, 93));
   color: #ffffff;
+  font-family: Arial;
 }
 
 .link {
