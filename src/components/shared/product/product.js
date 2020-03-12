@@ -8,7 +8,7 @@ class Product extends React.Component {
         <div className="product-container">
           <div className="product-img">
             <img
-              src={`http://localhost:4000${this.props.productProp.image}`}
+              src={`https://mcga-cil.herokuapp.com${this.props.productProp.image}`}
               alt={this.props.productProp.name}
               className="image"
             />
