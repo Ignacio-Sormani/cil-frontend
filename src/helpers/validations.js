@@ -1,7 +1,7 @@
 export const passwordValidation = password => {
   if (!password) {
     return 'Contraseña Requerida!';
-  } else if (password.length < 6) {
+  } else if (password.length < 5) {
     return 'Debe tener mas de 6 caracteres!';
   } else if (password.length > 10) {
     return 'Debe tener menos de 10 caracteres!';
